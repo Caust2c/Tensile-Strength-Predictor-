@@ -45,7 +45,7 @@ To run this project, you need to install the required dependencies. You can do t
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/Tensile-Strength-Predictor.git
+   git clone git clone https://github.com/Caust2c/Tensile-Strength-Predictor-.git
    cd Tensile-Strength-Predictor
    ```
 
