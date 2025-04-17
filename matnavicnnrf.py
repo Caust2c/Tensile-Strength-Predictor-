@@ -6,7 +6,7 @@ from sklearn.metrics import r2_score, mean_squared_error
 import matplotlib.pyplot as plt
 
 # Load the data (update the file_path as necessary)
-file_path = r"C:\Users\hardi\Downloads\MatNavi Mechanical properties of low-alloy steels.csv"
+file_path = r"C:\filepath"
 df = pd.read_csv(file_path)
 
 # Clean column names (remove any leading/trailing spaces)
