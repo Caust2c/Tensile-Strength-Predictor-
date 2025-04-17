@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 # Load the dataset
 print("Loading dataset...")
-file_path = r"C:\Users\hardi\Downloads\MatNavi Mechanical properties of low-alloy steels.csv"
+file_path = r"C:\filepath"
 df = pd.read_csv(file_path)
 df.columns = df.columns.str.strip()
 
