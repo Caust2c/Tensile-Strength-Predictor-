@@ -42,7 +42,8 @@ test_pred = rf_model.predict(X_test_scaled)
 
 r2 = r2_score(y_test, test_pred)
 mse = mean_squared_error(y_test, test_pred)
-
+rmse = pow(mse, 0.5)
+print(f"RMSE:  {rmse:.4f}")
 print(f"R² Score: {r2:.4f}")
 print(f"MSE: {mse:.4f}")
 
