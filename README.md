@@ -19,7 +19,7 @@ Each model includes:
 - Feature preprocessing
 - Training/validation/test split
 - Model training
-- R² and MSE evaluation
+- R², MSE and RMSE evaluation
 - Actual vs. predicted scatter plot
 
 ## Technologies & Libraries used
