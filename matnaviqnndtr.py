@@ -95,7 +95,8 @@ with torch.no_grad():
 
 r2 = r2_score(y_test_orig, test_pred)
 mse = mean_squared_error(y_test_orig, test_pred)
-
+rmse = pow(mse, 0.5)
+print(f"RMSE:  {rmse:.4f}")
 print(f"\nQuantum Decision Tree Performance:")
 print(f"R² Score: {r2:.4f}")
 print(f"MSE: {mse:.4f}")
