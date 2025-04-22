@@ -8,7 +8,7 @@ from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 from scipy.stats import randint
 
-file_path = r"https://raw.githubusercontent.com/ArtemRamus/PORTFOLIO-Mechanical-properties-of-low-alloy-steels/main/MatNavi%20Mechanical%20properties%20of%20low-alloy%20steels.csv"
+file_path = r"C:\\filepath"
 df = pd.read_csv(file_path)
 df.columns = df.columns.str.strip()
 
@@ -59,8 +59,9 @@ param_dist = {
     'min_samples_leaf': randint(1, 10),
     'max_features': [None, 'sqrt', 'log2']
 }
+
 rf_base = RandomForestRegressor(random_state=42, n_jobs=-1)
-rand_search = RandomizedSearchCV(rf_base, param_distributions=param_dist, n_iter=50, cv=5, verbose=1, scoring='r2', random_state=42, n_jobs=-1)
+rand_search = RandomizedSearchCV(rf_base, param_distributions=param_dist, n_iter=50, cv=5, verbose=0, scoring='r2', random_state=42, n_jobs=-1)
 rand_search.fit(X_train_scaled, y_train)
 
 rf_model = rand_search.best_estimator_
